@@ -1,0 +1,26 @@
+{
+  "name": "iterate-queues",
+  "version": "0.0.0",
+  "description": "Takes a 2d array, grabs first element of the first array, moves the first array to the end, and returns both.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArtskydJ/iterate-queues.git"
+  },
+  "keywords": [
+    "array",
+    "queue",
+    "iterate",
+    "2d",
+    "schedule"
+  ],
+  "author": "Joseph Dykstra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArtskydJ/iterate-queues/issues"
+  },
+  "homepage": "https://github.com/ArtskydJ/iterate-queues"
+}
