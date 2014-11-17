@@ -1,28 +1,29 @@
 {
-  "name": "iterate-queues",
-  "version": "0.0.0",
-  "description": "Takes a 2d array, grabs first element of the first array, moves the first array to the end, and returns both.",
+  "name": "array-step",
+  "version": "0.0.1",
+  "description": "Takes an array of arrays, returns the first element of the first array after moving it to the end.",
   "main": "index.js",
   "scripts": {
     "test": "tap test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ArtskydJ/iterate-queues.git"
+    "url": "https://github.com/ArtskydJ/array-step.git"
   },
   "keywords": [
     "array",
+    "arrays",
     "queue",
-    "iterate",
-    "2d",
-    "schedule"
+    "step",
+    "through",
+    "2d"
   ],
   "author": "Joseph Dykstra",
-  "license": "MIT",
+  "license": "VOL",
   "bugs": {
-    "url": "https://github.com/ArtskydJ/iterate-queues/issues"
+    "url": "https://github.com/ArtskydJ/array-step/issues"
   },
-  "homepage": "https://github.com/ArtskydJ/iterate-queues",
+  "homepage": "https://github.com/ArtskydJ/array-step",
   "devDependencies": {
     "tap": "^0.4.13"
   }
