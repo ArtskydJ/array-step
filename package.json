@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ArtskydJ/iterate-queues/issues"
   },
-  "homepage": "https://github.com/ArtskydJ/iterate-queues"
+  "homepage": "https://github.com/ArtskydJ/iterate-queues",
+  "devDependencies": {
+    "tap": "^0.4.13"
+  }
 }

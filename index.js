@@ -1,22 +1,22 @@
-module.exports = roundRobin
-
-function validArray(arr) {
-	return (
-		arr &&
-		typeof arr === 'object' &&
-		Array.isArray(arr) &&
-		arr.length > 0
-	)
+function valid(arr) {
+	return Array.isArray(arr) && arr.length > 0
 }
 
-function roundRobin(queues) {
-	if (!validArray(queues)) return new Error('No Queues')
-	var queue = queues.pop()
-	if (!validArray(queue)) return new Error('Empty Queue')
-	var thing = queue.pop()
-	queues.shift(queue)
+function step(originalArr) {
+	var arr = Object.create(originalArr)
+	arr = arr && arr.queues
+	if (!valid(arr)) {
+		return new Error('No Queues')
+	}
+	var ele = arr.shift()
+	var next = ele.shift ? ele.shift() : ele
+	if (valid(ele)) {
+		arr.push(ele)
+	}
 	return {
-		thing: thing,
-		queues: queues
+		next: next,
+		queues: arr
 	}
 }
+
+module.exports = step
