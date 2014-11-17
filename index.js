@@ -2,9 +2,7 @@ function valid(arr) {
 	return Array.isArray(arr) && arr.length > 0
 }
 
-function step(originalArr) {
-	var arr = Object.create(originalArr)
-	arr = arr && arr.queues
+function step(arr) {
 	if (!valid(arr)) {
 		return new Error('No Queues')
 	}
@@ -13,10 +11,7 @@ function step(originalArr) {
 	if (valid(ele)) {
 		arr.push(ele)
 	}
-	return {
-		next: next,
-		queues: arr
-	}
+	return next
 }
 
 module.exports = step
