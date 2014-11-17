@@ -1,11 +1,17 @@
 array-step
 ==========
 
-Basically step through an array, or an array of arrays.
+Step through an array, or an array of arrays.
 
-#Example
+#Install
 
-Works basically like [`Array.prototype.shift`][shift] when it is used on an array of non-arrays.
+```
+npm install array-step
+```
+
+#Examples
+
+Works basically like [`Array.prototype.shift`][shift] when it is used on an array of non-array objects.
 ```js
 var step = require('array-step')
 var arr = [ 0, 1, 2, 3, 4]
@@ -37,10 +43,6 @@ step(arr) //returns undefined, arr = []
 ```
 
 #Usage
-
-```
-npm install array-step
-```
 
 ###step(arr)
 
