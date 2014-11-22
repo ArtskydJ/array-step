@@ -6,10 +6,10 @@ function step(arr) {
 	if (!valid(arr)) {
 		return new Error('No Queues')
 	}
-	var ele = arr.shift()
-	var next = ele.shift ? ele.shift() : ele
-	if (valid(ele)) {
-		arr.push(ele)
+	var item = arr.shift()
+	var next = item.shift ? item.shift() : item
+	if (valid(item)) {
+		arr.push(item)
 	}
 	return next
 }
