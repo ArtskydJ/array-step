@@ -1,6 +1,6 @@
 {
   "name": "array-step",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Takes an array of arrays, returns the first element of the first array after moving it to the end.",
   "main": "index.js",
   "scripts": {
