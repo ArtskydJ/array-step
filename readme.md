@@ -1,17 +1,15 @@
 array-step
 ==========
 
+[![Build Status](https://travis-ci.org/ArtskydJ/array-step.svg)](https://travis-ci.org/ArtskydJ/array-step)
+[![Dependency Status](https://david-dm.org/ArtskydJ/array-step.svg)](https://david-dm.org/ArtskydJ/array-step)
+[![devDependency Status](https://david-dm.org/ArtskydJ/array-step/dev-status.svg)](https://david-dm.org/ArtskydJ/array-step#info=devDependencies)
+
 Step through an array, or an array of arrays.
 
-#Install
+# examples
 
-```
-npm install array-step
-```
-
-#Examples
-
-Works basically like [`Array.prototype.shift`][shift] when it is used on an array of non-array objects.
+Works basically like [`Array.prototype.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) when it is used on an array of non-array objects.
 ```js
 var step = require('array-step')
 var arr = [ 0, 1, 2, 3, 4]
@@ -42,17 +40,26 @@ step(arr) //returns 5,         arr = []
 step(arr) //returns undefined, arr = []
 ```
 
-#Usage
+# api
 
-###step(arr)
+```js
+var step = require('array-step')
+```
+
+### `step(arr)`
 
 - Takes an array of arrays, or an array.
 - Returns the element that was removed.
 - Mutates the array that was passed in.
 
+# install
+
+Install with [npm](https://nodejs.org/download):
+
+```
+npm install array-step
+```
+
 #License
 
-[Very Open License][VOL]
-
-[shift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
-[VOL]: http://veryopenlicense.com
+[VOL](http://veryopenlicense.com)
