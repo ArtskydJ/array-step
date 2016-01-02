@@ -2,8 +2,6 @@ array-step
 ==========
 
 [![Build Status](https://travis-ci.org/ArtskydJ/array-step.svg)](https://travis-ci.org/ArtskydJ/array-step)
-[![Dependency Status](https://david-dm.org/ArtskydJ/array-step.svg)](https://david-dm.org/ArtskydJ/array-step)
-[![devDependency Status](https://david-dm.org/ArtskydJ/array-step/dev-status.svg)](https://david-dm.org/ArtskydJ/array-step#info=devDependencies)
 
 Step through an array, or an array of arrays.
 
