@@ -1,16 +1,16 @@
 array-step
 ==========
 
-[![Build Status](https://travis-ci.org/ArtskydJ/array-step.svg)](https://travis-ci.org/ArtskydJ/array-step)
+> Takes an array of arrays, returns the first element of the first array after moving it to the end.
 
-Step through an array, or an array of arrays.
+[![Build Status](https://travis-ci.org/ArtskydJ/array-step.svg)](https://travis-ci.org/ArtskydJ/array-step)
 
 # examples
 
 Works basically like [`Array.prototype.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) when it is used on an array of non-array objects.
 ```js
 var step = require('array-step')
-var arr = [ 0, 1, 2, 3, 4]
+var arr = [ 0, 1, 2, 3, 4 ]
 
 step(arr) //returns 0,         arr = [ 1, 2, 3, 4 ]
 step(arr) //returns 1,         arr = [ 2, 3, 4 ]
@@ -54,9 +54,7 @@ var step = require('array-step')
 
 Install with [npm](https://nodejs.org/download):
 
-```
-npm install array-step
-```
+	npm install array-step
 
 #License
 
