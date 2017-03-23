@@ -5,7 +5,7 @@ array-step
 
 [![Build Status](https://travis-ci.org/ArtskydJ/array-step.svg)](https://travis-ci.org/ArtskydJ/array-step)
 
-# examples
+# Examples
 
 Works basically like [`Array.prototype.shift`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) when it is used on an array of non-array objects.
 ```js
@@ -38,7 +38,7 @@ step(arr) //returns 5,         arr = []
 step(arr) //returns undefined, arr = []
 ```
 
-# api
+# API
 
 ```js
 var step = require('array-step')
@@ -50,12 +50,16 @@ var step = require('array-step')
 - Returns the element that was removed.
 - Mutates the array that was passed in.
 
-# install
+# Install
 
 Install with [npm](https://nodejs.org/download):
 
 	npm install array-step
 
-#License
+# Similar
+
+- [`arrayzipper`](https://www.npmjs.com/package/arrayzipper)
+
+# License
 
 [VOL](http://veryopenlicense.com)
